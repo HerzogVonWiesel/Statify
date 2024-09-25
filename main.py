@@ -550,7 +550,7 @@ if True:
     fill_cache(df_stream)
 
 stat_genres_1.subheader("Genres")
-if True and is_extended_history:
+if is_extended_history:
     genre_counts = track_genres(df_stream_country_filtered, simplify_genres, is_extended_history).head(50)
 else:
     genre_counts = track_genres(df_lib_tracks, simplify_genres).head(50)
